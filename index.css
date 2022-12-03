@@ -132,7 +132,7 @@ span a{
 }
 
 
-@media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1199px) {
+@media screen and (max-width: 1220px) and (min-width: 600px){
   .container {
   	flex-direction: column;
  	margin:auto 30%;
@@ -145,7 +145,6 @@ span a{
   	flex-direction: column;
   	align-items:center;
 	  }
-
    button {
    		margin-bottom:10px;
    }
