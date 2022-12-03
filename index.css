@@ -31,11 +31,6 @@ body {
 	color:white;
 }
 
-.card:hover + a {
-	transition:2s;
-	background-color:#6741d9;
-}
-
 .first-info {
 	margin-bottom:24px;
 }
@@ -134,4 +129,25 @@ img {
 
 span a{
 	padding-bottom:10px;
+}
+
+
+@media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1199px) {
+  .container {
+  	flex-direction: column;
+ 	margin:auto 30%;
+ 	margin-top:30px;
+  }
+  .card {
+  	margin-bottom:30px;
+  }
+  .card-buttons{
+  	flex-direction: column;
+  	align-items:center;
+	  }
+
+   button {
+   		margin-bottom:10px;
+   }
+
 }
