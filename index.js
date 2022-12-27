@@ -26,7 +26,7 @@ for(let i = 0 ; i < dices ; i++) {
 
 	let roll = 	Math.floor(Math.random() * 6) + 1;
 	let rollText = document.createElement('button')
-	let bg = `images/dice${roll}.png`;
+	let bg = `images/dice${roll}.PNG`;
 
 	rollText.style.backgroundSize = "auto";
 	rollText.style.background = 'url(' + bg + ')';
