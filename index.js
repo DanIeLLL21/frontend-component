@@ -31,6 +31,8 @@ for(let i = 0 ; i < dices ; i++) {
 	let rollText = document.createElement('button')
 	let bg = `images/dice${roll}.png`;
 
+
+	rollText.innerHTML = roll;
 	rollText.style.background = 'url(' + bg + ')';
 	rollText.style.backgroundSize = "100% 100%";
 
@@ -94,6 +96,8 @@ function rollDices () {
 			let bg = `images/dice${roll}.png`;
 
 			if(!allbuttons[i].disabled == true) {
+
+				allbuttons[i].innerHTML = roll;
 				allbuttons[i].value = roll;
 				allbuttons[i].style.background = 'url(' + bg + ')';
 				allbuttons[i].style.backgroundSize = "100% 100%";
@@ -130,6 +134,7 @@ function resetDices () {
 		let roll = 	Math.floor(Math.random() * 6) + 1;
 		let bg = `images/dice${roll}.png`;
 
+		allbuttons[i].innerHTML = roll;
 		allbuttons[i].disabled = false;
 		allbuttons[i].value = roll;
 		allbuttons[i].style.background = 'url(' + bg + ')';
